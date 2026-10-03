@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Crystal Shackleford, Ph.D. — Publications</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,800;1,500&family=Spectral:ital,wght@0,400;0,500;1,400&family=Jost:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --cream:#FBF8F1; --ink:#1A1712; --muted:#7c7264; --gold:#9C7A3C; --line:#D9CFBC;
+  --disp:"Playfair Display",Georgia,serif; --body:"Spectral",Georgia,serif; --ui:"Jost",sans-serif;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:var(--body);font-size:19px;line-height:1.75}
+a{color:var(--ink)}
+a:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.wrap{max-width:52rem;margin:0 auto;padding:0 1.5rem}
+.ui{font-family:var(--ui);text-transform:uppercase;letter-spacing:.22em;font-size:.68rem;color:var(--muted)}
+
+header.top{display:flex;flex-direction:column;align-items:center;gap:.45rem;padding:1.1rem 0 .8rem;border-bottom:1px solid var(--line);text-align:center}
+.mark{font-family:var(--disp);font-weight:800;font-size:1.5rem;letter-spacing:.02em;line-height:1.2}
+.mark-affil{font-family:var(--body);font-style:italic;font-size:.9rem;line-height:1.3;color:var(--muted);margin:0 0 .25rem}
+nav{display:flex;gap:1.8rem}
+nav a{font-family:var(--ui);text-transform:uppercase;letter-spacing:.16em;font-size:.68rem;color:var(--muted);text-decoration:none}
+nav a[aria-current]{color:var(--gold)}
+nav a:hover{color:var(--ink)}
+
+article{text-align:center;padding:3.5rem 0 1rem}
+.kicker{color:var(--gold);letter-spacing:.28em;margin-bottom:1.6rem}
+h1{font-family:var(--disp);font-weight:600;font-size:clamp(2.3rem,6vw,4rem);line-height:1.08;margin:0 auto 1.4rem;max-width:16ch;letter-spacing:.005em}
+.authors{font-family:var(--body);font-style:italic;font-size:1.2rem;color:var(--ink);margin:0 0 .3rem}
+.authors sup{color:var(--gold);font-style:normal}
+.affil{color:var(--muted);font-size:.95rem;font-style:italic;margin:0}
+
+.ornament{display:flex;align-items:center;justify-content:center;gap:1rem;margin:2.2rem 0}
+.ornament::before,.ornament::after{content:"";height:1px;width:4rem;background:var(--line)}
+.ornament span{color:var(--gold);font-size:1rem}
+
+.actions{display:flex;justify-content:center;gap:.6rem;flex-wrap:wrap;margin-bottom:2.6rem}
+.actions a{font-family:var(--ui);text-transform:uppercase;letter-spacing:.12em;font-size:.7rem;padding:.6rem 1.3rem;border:1px solid var(--ink);color:var(--ink);text-decoration:none;border-radius:999px;transition:.15s}
+.actions a:hover{background:var(--ink);color:var(--cream)}
+.actions a.gold{border-color:var(--gold);color:var(--gold)}
+.actions a.gold:hover{background:var(--gold);color:var(--cream)}
+.actions a[aria-disabled]{opacity:.4;pointer-events:none}
+
+.body-copy{text-align:left;max-width:38rem;margin:0 auto}
+.sec-label{font-family:var(--ui);text-transform:uppercase;letter-spacing:.24em;font-size:.66rem;color:var(--gold);text-align:center;margin:2.6rem 0 1.2rem;position:relative}
+.abstract p{margin:0 0 1.3rem}
+.abstract .lead::first-letter{font-family:var(--disp);font-weight:600;font-size:4.3rem;line-height:.72;float:left;padding:.3rem .55rem 0 0;color:var(--gold)}
+
+.meta-strip{display:flex;justify-content:center;flex-wrap:wrap;gap:0 2.5rem;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:1.2rem 0;margin:2.6rem 0}
+.meta-strip div{text-align:center}
+.meta-strip dt{font-family:var(--ui);text-transform:uppercase;letter-spacing:.16em;font-size:.6rem;color:var(--muted)}
+.meta-strip dd{margin:.25rem 0 0;font-size:.92rem}
+.meta-strip dd a{color:var(--gold);text-decoration:none;border-bottom:1px solid var(--line)}
+
+.cite{font-style:italic;text-align:center;max-width:40rem;margin:0 auto;color:#3a352c}
+pre.bib{text-align:left;max-width:38rem;margin:1.4rem auto 0;background:#F4EEE1;border:1px solid var(--line);border-radius:6px;padding:1rem 1.1rem;font-family:ui-monospace,monospace;font-size:.75rem;line-height:1.6;overflow-x:auto;font-style:normal}
+
+.related{max-width:40rem;margin:0 auto;padding:1rem 0 3rem}
+.related a{display:block;text-align:center;padding:1.3rem 0;border-top:1px solid var(--line);text-decoration:none}
+.related a:last-child{border-bottom:1px solid var(--line)}
+.related .t{font-family:var(--disp);font-weight:500;font-size:1.3rem}
+.related a:hover .t{color:var(--gold)}
+.related .m{font-family:var(--ui);text-transform:uppercase;letter-spacing:.14em;font-size:.62rem;color:var(--muted);margin-top:.3rem}
+
+footer{text-align:center;padding:2rem 0 3rem;border-top:1px solid var(--line)}
+
+.body-copy a { color: var(--gold); text-decoration: none; border-bottom: 1px solid var(--line); }
+.pub-list { font-size: 1.05rem; line-height: 1.6; padding-left: 1.2rem; }
+.pub-list li { margin-bottom: 1.5rem; overflow-wrap: anywhere; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div class="mark">Crystal Shackleford, Ph.D.</div>
+    <p class="mark-affil">Postdoctoral Researcher, Department of Psychology, Yale University</p>
+    <nav><a href="index.html">Home</a><a href="research.html">Research</a><a href="publications.html" aria-current="page">Publications</a><a href="https://drive.google.com/file/d/1zu4zYNnp0PlnWuGSVHw_WL5suBpipzI6/view?usp=sharing" target="_blank" rel="noopener">CV</a></nav>
+  </header>
+
+  <article>
+    <h1>Publications</h1>
+    <div class="ornament"><span>❧</span></div>
+
+    <div class="body-copy">
+      <ol class="pub-list">
+        <li><strong>Shackleford, C.</strong> (2026). Violence is not a monolith: Ecologies of threat and their psychological signatures. <em>Behavioral Brain Sciences</em> 2;49:e79. DOI: <a href="https://doi.org/10.1017/s0140525x25103397">10.1017/S0140525X25103397</a> <a href="https://doi.org/10.1017/s0140525x25103397">[Preprint]</a></li>
+
+        <li><strong>Shackleford, C.</strong>, Rabinowitz, M., &amp; Richeson, J.A. (2026). Stigma-based solidarity betrayal: Implications for resistance to the rise of ethno-nationalism in the U.S. <em>Advances in Psychology</em> [Special issue: Psychology of Pushback, Eds.: J. Kunst &amp; J. Dovidio]. doi: <a href="https://doi.org/10.56296/aip00044">10.56296/aip00044</a> <a href="https://drive.google.com/file/d/16miww6IpFHzp52p6s3oi-gUanZPTtsAr/view?usp=sharing">[PDF]</a></li>
+
+        <li><strong>Shackleford, C.</strong> (2025). Love is a revolutionary emotion: Ingroup solidarity amid political violence in Palestine. <em>Journal of Social Issues, 81</em>(4). <a href="https://spssi.onlinelibrary.wiley.com/doi/10.1111/josi.70047">https://spssi.onlinelibrary.wiley.com/doi/10.1111/josi.70047</a> <a href="https://drive.google.com/file/d/1RWsd9KO6y_rIdfRxHmwVainSLICkFsGk/view?usp=sharing">[PDF]</a></li>
+
+        <li>Pasek, M.H., Vishkin, A., Lehner, A., <strong>Shackleford C.</strong>, Hartley, S., &amp; Ginges, J. (2025). In their God we trust: Religious cognition increases cooperation across religious divides. <em>Journal of Personality and Social Psychology.</em> <a href="https://psycnet.apa.org/doi/10.1037/pspi0000499">https://doi.org/10.1037/pspi0000499</a></li>
+
+        <li>Power, S.A., <strong>Shackleford, C.</strong>, Merhout, F., &amp; Shweder, R.A. (2025). Is multiculturalism as American as apple pie? A survey of attitudes toward ethnic and religious diversity in the United States. <em>Ethos.</em> <a href="https://doi.org/10.1111/etho.70018">https://doi.org/10.1111/etho.70018</a></li>
+
+        <li><strong>Shackleford, C.</strong>, Pasek, M. H., Vishkin, A., &amp; Ginges, J. (2024). A case of positive intergroup meta-perceptions: Palestinians and Israelis believe the other’s God encourages intergroup benevolence. <em>Journal of Experimental Social Psychology, 110</em>, 104551. <a href="https://doi.org/10.1016/j.jesp.2023.104551">https://doi.org/10.1016/j.jesp.2023.104551</a></li>
+
+        <li>Pasek, M. H., Kelly, J. M., <strong>Shackleford, C.</strong>, White, C. J. M., Vishkin, A., Smith, J., Norenzayan, A., Shariff, A., &amp; Ginges, J. (2023). Thinking about God encourages prosociality to religious outgroups: A cross-cultural investigation. <em>Psychological Science, 36</em>(6), 657-669. <a href="https://doi.org/10.1177/09567976231158576">https://doi.org/10.1177/09567976231158576</a></li>
+
+        <li>Smith, J., Pasek, M. H., Vishkin, A., Johnson, K., <strong>Shackleford, C.</strong>, &amp; Ginges, J. (2022). Thinking about God discourages dehumanization of religious outgroups. <em>Journal of Experimental Psychology: General, 151</em>(10), 2586–2603. <a href="https://doi.org/10.1037/xge0001206">https://doi.org/10.1037/xge0001206</a></li>
+
+        <li>Pasek, M. H., <strong>Shackleford, C.</strong>, Smith, J. M., Vishkin, A., Lehner, A., &amp; Ginges, J. (2020). God values the lives of my outgroup more than I do: Evidence from Fiji and Israel. <em>Social Psychological and Personality Science, 11</em>(7), 1032-1041. <a href="https://doi.org/10.1177/1948550620904516">https://doi.org/10.1177/1948550620904516</a></li>
+
+        <li>Rad, M. S., <strong>Shackleford, C.</strong>, Lee, K., Jassin, K., &amp; Ginges, J. (2019). Folk theories of gender and anti-transgender attitudes: Gender differences and policy preferences. <em>PLOS ONE, 14</em>(12), e0226967. <a href="https://doi.org/10.1371/journal.pone.0226967">https://doi.org/10.1371/journal.pone.0226967</a></li>
+
+        <li>Ginges, J., &amp; <strong>Shackleford, C.</strong> (2018). Self-sacrifice for a cause: The role of ideas and beliefs in motivating human conflict. <em>Behavioral and Brain Sciences, 41</em>, E203. <a href="https://doi.org/10.1017/S0140525X18001693">https://doi.org/10.1017/S0140525X18001693</a></li>
+
+        <li>DeCasien, A. R., Evans, K. D., Fuong, H., Lee, S., Petersdorf, M., Peterson, R., &amp; <strong>Shackleford, C.</strong> (2016). [Review of the book <em>Tool Use in Animals: Cognition and Ecology</em>, by C. M. Sanz, J. Call, &amp; C. Boesch]. <em>International Journal of Primatology, 37</em>, 608–611. <a href="https://doi.org/10.1007/s10764-016-9921-1">https://doi.org/10.1007/s10764-016-9921-1</a></li>
+
+        <li>Weller, J. A., Buchanan, T., <strong>Shackleford, C.</strong>, Morganstern, A., &amp; Denburg, N. (2014). Diurnal cortisol rhythm is associated with increased risky decision making in older adults. <em>Psychology and Aging, 29</em>(2), 271-283. doi: <a href="https://doi.org/10.1037%2Fa0036623">10.1037/a0036623</a></li>
+
+        <li>Weller, J. A., <strong>Shackleford, C.</strong>, Dieckmann, N., &amp; Slovic, P. (2013). Possession attachment predicts cell phone use while driving. <em>Health Psychology, 32</em>(4), 379-387. <a href="https://psycnet.apa.org/doi/10.1037/a0029265">https://doi.org/10.1037/a0029265</a></li>
+      </ol>
+    </div>
+
+  </article>
+
+  <footer class="ui">© 2026 Crystal Shackleford, Ph.D.</footer>
+</div>
+</body>
+</html>
